@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer mon compte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .formulario {
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        .formulario h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #f0f0f0;
+        }
+
+        .formulario label {
+            display: block;
+            margin-bottom: 5px;
+            color: #f0f0f0;
+        }
+
+        .formulario input[type="email"],
+        .formulario input[type="text"] {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .formulario button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #ffef00;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .formulario button[type="submit"]:hover {
+            background-color: #0056b3;
+            color: #f0f0f0;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="formulario">
+        <div class="logo">
+            <img src="https://planning.sendin.com/public/dist/img/logo.png" alt="Logo" style="max-width: 100%;">
+        </div>
+
+        <h2>Supprimer mon compte</h2>
+        <form onsubmit="return enviarCorreo()">
+            <div>
+                <label for="email">Adresse Électronique :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nombre" name="nnombreom" required>
+            </div>
+            <div>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="apellidos" name="prenoapellidosm" required>
+            </div>
+            <div>
+                <button type="submit">Envoyer la Demande</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script>
+        function enviarCorreo() {
+            var email = document.getElementById('email').value;
+            var nombre = document.getElementById('nombre').value;
+            var apellidos = document.getElementById('apellidos').value;
+            var cuerpoMensaje = "Correo Electrónico: " + email + "%0A" +
+                                "Nombre: " + nombre + "%0A" +
+                                "Apellidos: " + apellidos;
+            window.location.href = "mailto:desarrolloapps@infoter.net?subject=Supprimer mon compte&body=" + cuerpoMensaje;
+            return false; // Para prevenir el envío del formulario
+        }
+    </script>
+</body>
+</html>

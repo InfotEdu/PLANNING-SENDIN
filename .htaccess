@@ -1,0 +1,21 @@
+DirectoryIndex index.php
+
+Options -Indexes
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+
+redirect 301 /upload/83.pdf http://www.afcab.com/doc/b08220.pdf
+redirect 301 /upload/84.pdf http://www.afcab.com/doc/b11260.pdf
+redirect 301 /upload/85.pdf http://www.afcab.com/doc/b14292.pdf
+redirect 301 /upload/86.pdf http://www.afcab.com/doc/b93066.pdf
+
+redirect 301 /upload/87.pdf http://www.afcab.com/doc/b93003.pdf
+redirect 301 /upload/88.pdf http://www.afcab.com/doc/b93013.pdf
+redirect 301 /upload/89.pdf http://www.afcab.com/doc/b93024.pdf
+redirect 301 /upload/90.pdf http://www.afcab.com/doc/b93047.pdf
