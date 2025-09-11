@@ -83,7 +83,7 @@
 			<input style="display:none"  id="editable" value="<?php echo $editable?>">
 
 			<div style="overflow-x:auto;">
-				<h2>B500B</h2>
+				<h2>K500CT</h2>
 			<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="UNITESHA" width="100%">
 				<thead>
 					<tr>

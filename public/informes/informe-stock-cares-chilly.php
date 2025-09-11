@@ -170,7 +170,7 @@ $pdf->SetFillColor(190,221,252);
 $pdf->Cell(70,5,utf8_decode('CHILLY'),'LTB',0,'C',TRUE);
 $pdf->Cell(20,5,utf8_decode($fechaBonita),'TBR',0,'C',TRUE);
 $pdf->Cell(95,5,utf8_decode(''),'',0);
-$pdf->Cell(59,5,utf8_decode('CARES B500B'),'LTBR',0,'C',TRUE);
+$pdf->Cell(59,5,utf8_decode('K500CT'),'LTBR',0,'C',TRUE);
 
 //UNIDADES IDEA X2 TN DE PESO
 $TOTALSTOCKEXCEL = $filasBobIdea[0]['d6_cares_chilly'] * 2;

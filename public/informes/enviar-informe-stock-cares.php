@@ -170,7 +170,7 @@ $pdf->SetFillColor(190,221,252);
 $pdf->Cell(70,5,utf8_decode('TERUEL'),'LTB',0,'C',TRUE);
 $pdf->Cell(20,5,utf8_decode($fechaBonita),'TBR',0,'C',TRUE);
 $pdf->Cell(95,5,utf8_decode(''),'',0);
-$pdf->Cell(59,5,utf8_decode('CARES B500B'),'LTBR',0,'C',TRUE);
+$pdf->Cell(59,5,utf8_decode('K500CT'),'LTBR',0,'C',TRUE);
 
 //UNIDADES IDEA X2 TN DE PESO
 $TOTALSTOCKEXCEL = $filasBobIdea[0]['d6_cares'] * 2;
@@ -1846,7 +1846,7 @@ $pdf->Cell(74,5,utf8_decode('TOTAL STOCK'),'LTBR',0,'C',TRUE);
 $pdf->Cell(17,5,round($TOTALSTOCKEXCEL,1),'LTBR',1,'C',TRUE);
 
 $attachment= $pdf->Output('sotck-cares.pdf', 'S');
-$nombreAdjunto = 'STOCK-CARES-SPAIN-'.$fecha.'.pdf';
+$nombreAdjunto = 'STOCK-K500CT-SPAIN-'.$fecha.'.pdf';
 
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -1881,10 +1881,10 @@ foreach($recipientesSpain as $email => $name)
    $mail->AddCC($email, $name);
 }
 
-$mail->Subject = 'STOCK CARES SPAIN '.$fechaBonita;
-$mail->msgHTML('STOCK CARES SPAIN '.$fechaBonita . '<br><br><p style="margin: 0cm;font-size:15px;font-family: Calibri, sans-serif;color: rgb(0, 0, 0);font-style: normal;font-weight: normal;text-align: start;text-indent: 0px;text-decoration: none;"><strong><span style="color: rgb(79, 129, 189);">Centrale d&rsquo;Achats</span></strong><span style="font-size:13px;"><br>P.I. Platea &ndash; Calle Viena N&ordm;6&nbsp;<br>44195 &ndash; Teruel &ndash; Espa&ntilde;a</span></p>
+$mail->Subject = 'STOCK K500CT SPAIN '.$fechaBonita;
+$mail->msgHTML('STOCK K500CT SPAIN '.$fechaBonita . '<br><br><p style="margin: 0cm;font-size:15px;font-family: Calibri, sans-serif;color: rgb(0, 0, 0);font-style: normal;font-weight: normal;text-align: start;text-indent: 0px;text-decoration: none;"><strong><span style="color: rgb(79, 129, 189);">Centrale d&rsquo;Achats</span></strong><span style="font-size:13px;"><br>P.I. Platea &ndash; Calle Viena N&ordm;6&nbsp;<br>44195 &ndash; Teruel &ndash; Espa&ntilde;a</span></p>
 <p style="margin: 0cm;font-size:15px;font-family: Calibri, sans-serif;color: rgb(0, 0, 0);font-style: normal;font-weight: normal;text-align: start;text-indent: 0px;text-decoration: none;"><span style="font-size:13px;">Telf.&nbsp;</span><span style="font-size:13px;">+34 978 61 40 22</span></p>');  
-$mail->AltBody = 'STOCK CARES SPAIN '.$fechaBonita;
+$mail->AltBody = 'STOCK K500CT SPAIN '.$fechaBonita;
 $mail->AddStringAttachment($attachment, $nombreAdjunto);
 //$mail->addAttachment('docs/brochure.pdf'); //Attachment, can be skipped
 
