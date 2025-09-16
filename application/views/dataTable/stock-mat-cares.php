@@ -71,7 +71,7 @@
 			
 		
 			<h1 style="max-width:50%; float: left;">
-			Stock Material Cares <?php echo $fecha?> 
+			Stock Material K500CT <?php echo $fecha?> 
 			</h1>
 			<a style="float: left; margin-left: 15px; color: #000000 !important;" href="/public/informes/informe-stock-cares.php?fecha=<?=$fecha?>" target="_blank">  <button style="max-width: 220px;" type="button" class="btn btn-block btn-outline-primary btn-lg">Ver PDF </button>  </a>
 			

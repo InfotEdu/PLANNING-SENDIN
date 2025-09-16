@@ -142,7 +142,7 @@ $cur_tab = $this->uri->segment(2)==''?'dashboard': $this->uri->segment(2);
               <li><a href="<?php echo base_url('dataTable/StockMAT');?>">INVENTARIO SPAIN</a></li>
               <li><a href="<?php echo base_url('dataTable/StockMATChilly');?>">INVENTARIO CHILLY</a></li>
               <li><a href="<?php echo base_url('dataTable/StockMATCares');?>">INVENTARIO K500CT SPAIN</a></li>
-              <li><a href="<?php echo base_url('dataTable/StockMATCaresChilly');?>">INVENTARIO CARES CHILLY</a></li>
+              <li><a href="<?php echo base_url('dataTable/StockMATCaresChilly');?>">INVENTARIO K500CT CHILLY</a></li>
               <li><a href="<?php echo base_url('dataTable/StockMATCouplers');?>">COUPLERS</a></li>
               <li><a href="<?php echo base_url('dataTable/StockMATConfig');?>">PESOS Y CONSUMOS</a></li>
               <li><a href="<?php echo base_url('dataTable/documentation?id_origen=4');?>">Documentation</a></li>

@@ -201,7 +201,7 @@ $pdf->Cell(17,4,utf8_decode('TOTAL'),'LTBR',1,'C',TRUE);
 
 //FILA TABLA
 $pdf->SetFont('Helvetica','',9);
-$pdf->Cell(74,4,utf8_decode('BOBINAS B500B'),'LTBR',0,'R');
+$pdf->Cell(74,4,utf8_decode('BOBINAS K500CT'),'LTBR',0,'R');
 $pdf->Cell(17,4,utf8_decode($filasHA[0]['d8_cares']),'LTBR',0,'C');
 $pdf->Cell(17,4,utf8_decode($filasHA[0]['d10_cares']),'LTBR',0,'C');
 $pdf->Cell(17,4,utf8_decode($filasHA[0]['d12_cares']),'LTBR',0,'C');
@@ -336,7 +336,7 @@ $pdf->Cell(17,4,utf8_decode('TOTAL'),'LTBR',1,'C',TRUE);
 
 //FILA TABLA
 $pdf->SetFont('Helvetica','',9);
-$pdf->Cell(74,4,utf8_decode('BOBINAS B500B'),'LTBR',0,'R');
+$pdf->Cell(74,4,utf8_decode('BOBINAS K500CT'),'LTBR',0,'R');
 $pdf->Cell(17,4,utf8_decode($filasHA[0]['d8_cares'] * $filasHA[0]['peso_d8']),'LTBR',0,'C');
 $pdf->Cell(17,4,utf8_decode($filasHA[0]['d10_cares'] * $filasHA[0]['peso_d10']),'LTBR',0,'C');
 $pdf->Cell(17,4,utf8_decode($filasHA[0]['d12_cares'] * $filasHA[0]['peso_d12']),'LTBR',0,'C');

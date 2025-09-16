@@ -71,7 +71,7 @@
 			
 		
 			<h1 style="max-width:50%; float: left;">
-			Stock Material Cares Chilly <?php echo $fecha?> 
+			Stock Material K500CT Chilly <?php echo $fecha?> 
 			</h1>
 			<a style="float: left; margin-left: 15px; color: #000000 !important;" href="/public/informes/informe-stock-cares-chilly.php?fecha=<?=$fecha?>" target="_blank">  <button style="max-width: 220px;" type="button" class="btn btn-block btn-outline-primary btn-lg">Ver PDF </button>  </a>
 			
@@ -83,7 +83,7 @@
 			<input style="display:none"  id="editable" value="<?php echo $editable?>">
 
 			<div style="overflow-x:auto;">
-				<h2>B500B</h2>
+				<h2>K500CT</h2>
 			<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="UNITESHA" width="100%">
 				<thead>
 					<tr>
